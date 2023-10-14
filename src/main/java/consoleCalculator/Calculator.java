@@ -1,19 +1,23 @@
 package consoleCalculator;
 
-public class Calculator implements Calculatable{
-//    private int first;
-//    private int sec;
-//
-//    public Calculator(int first, int sec) {
-//        this.first = first;
-//        this.sec = sec;
-//    }
+import java.util.Scanner;
 
-    public int getResult(Actions actions, int first, int sec) {
-        if (actions.equals(Actions.SUBSTRUCTING)) {
-            return this.substruct(first, sec);
+public class Calculator {
+    public void result() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Номер операции: ");
+        int value = scanner.nextInt();
+
+
+        if (value == 1) {
+            ModuleSum moduleSum = new ModuleSum();
+            moduleSum.sum();
+        } else if (value == 2) {
+            ModuleSubtraction moduleSubtraction = new ModuleSubtraction();
+            moduleSubtraction.subtraction();
         } else {
-            return actions.equals(Actions.SUM) ? this.sum(first, sec) : 0;
+            System.out.println("Неверная команда");
         }
+        return;
     }
 }
