@@ -1,18 +1,21 @@
+// Класс, в котором описаны ввод чисел, вычитание и вывод результата в консоль
+
 package consoleCalculator;
 
 import java.util.Scanner;
 
 public class ModuleSubtraction {
-    public void subtraction () {
+    public int subtraction() {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Значение а: ");
+        System.out.print("Enter number one: ");
         int firstValue = scanner.nextInt();
-        System.out.println("Значение b: ");
+        System.out.print("Enter number two: ");
         int secondValue = scanner.nextInt();
 
-        int resultSubtraction = firstValue + secondValue;
-        System.out.println("Результат вычитания = " + resultSubtraction );
-
+        ValueClass valueClass = new ValueClass(firstValue, secondValue);
+        int resultSubtraction = valueClass.getFirstValue() - valueClass.getSecondValue();
+        System.out.println("Result subtraction" + resultSubtraction);
+        return resultSubtraction;
     }
 }

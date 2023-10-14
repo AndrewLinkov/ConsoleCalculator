@@ -1,18 +1,21 @@
+// Класс, в котором описаны ввод чисел, сложение и вывод результата в консоль
+
 package consoleCalculator;
 
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class ModuleSum {
-    public void sum() {
+    public int sum() {
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите первое число: ");
+        System.out.print("Enter number one: ");
         int firstValue = scanner.nextInt();
-        System.out.print("Введите второе число: ");
+        System.out.print("Enter number two: ");
         int secondValue = scanner.nextInt();
 
-        int resultSum = firstValue + secondValue;
-        System.out.println("Результат суммы = " + resultSum );
-        return;
+        ValueClass valueClass = new ValueClass(firstValue, secondValue);
+        int resultSum = valueClass.getFirstValue() + valueClass.getSecondValue();
+        System.out.println("Result sum" + resultSum);
+        return resultSum;
     }
 }
