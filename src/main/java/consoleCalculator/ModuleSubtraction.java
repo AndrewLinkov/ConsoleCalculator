@@ -15,7 +15,7 @@ public class ModuleSubtraction {
 
         ValueClass valueClass = new ValueClass(firstValue, secondValue);
         int resultSubtraction = valueClass.getFirstValue() - valueClass.getSecondValue();
-        System.out.println("Result subtraction" + resultSubtraction);
+        System.out.println("Result subtraction: " + resultSubtraction);
         return resultSubtraction;
     }
 }

@@ -9,12 +9,12 @@ public class Processor {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Calculation operation number: ");
+            System.out.println("Enter calculation operation number: ");
             int numberOperation = scanner.nextInt();
             if (numberOperation == 1) {
                 System.out.println("Add operation selected");
-                ModuleSum moduleSum = new ModuleSum();
-                moduleSum.sum();
+                ModuleAdding moduleAdding = new ModuleAdding();
+                moduleAdding.sum();
             } else if (numberOperation == 2) {
                 System.out.println("Subtraction operation selected");
                 ModuleSubtraction moduleSubtraction = new ModuleSubtraction();

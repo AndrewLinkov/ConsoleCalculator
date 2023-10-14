@@ -4,7 +4,7 @@ package consoleCalculator;
 
 import java.util.Scanner;
 
-public class ModuleSum {
+public class ModuleAdding {
     public int sum() {
 
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class ModuleSum {
 
         ValueClass valueClass = new ValueClass(firstValue, secondValue);
         int resultSum = valueClass.getFirstValue() + valueClass.getSecondValue();
-        System.out.println("Result sum" + resultSum);
+        System.out.println("Result sum: " + resultSum);
         return resultSum;
     }
 }
