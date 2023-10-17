@@ -12,6 +12,6 @@ public class ModuleAdding {
         int resultSum = dataInputter.valueClass.getFirstValue() + dataInputter.valueClass.getSecondValue();
         //вывод результата суммы
         System.out.println("Результат сложения: " + resultSum);
-        return sum();
+        return resultSum;
     }
 }

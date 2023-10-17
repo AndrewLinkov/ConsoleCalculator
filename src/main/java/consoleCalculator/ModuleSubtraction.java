@@ -2,9 +2,6 @@
 
 package consoleCalculator;
 
-import java.util.Scanner;
-import java.util.SortedMap;
-
 public class ModuleSubtraction {
     public int subtraction() {
         DataInputter dataInputter = new DataInputter();
@@ -16,8 +13,10 @@ public class ModuleSubtraction {
             int resultSubtraction = dataInputter.valueClass.getFirstValue() - dataInputter.valueClass.getSecondValue();
             //вывод результата вычитания
             System.out.println("Результат вычитания: " + resultSubtraction);
+            return resultSubtraction;
         } else {
-            System.out.println("Операция вычитания невозможно, т.к первое число меньше второго");
+            System.out.println("Операция вычитания невозможно, т.к первое число меньше второго " +
+                    "\nВведите корректные значения");
         }
         return subtraction();
     }
