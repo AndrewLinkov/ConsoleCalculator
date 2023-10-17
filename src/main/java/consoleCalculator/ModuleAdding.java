@@ -2,20 +2,16 @@
 
 package consoleCalculator;
 
-import java.util.Scanner;
-
 public class ModuleAdding {
     public int sum() {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number one: ");
-        int firstValue = scanner.nextInt();
-        System.out.print("Enter number two: ");
-        int secondValue = scanner.nextInt();
-
-        ValueClass valueClass = new ValueClass(firstValue, secondValue);
-        int resultSum = valueClass.getFirstValue() + valueClass.getSecondValue();
-        System.out.println("Result sum: " + resultSum);
-        return resultSum;
+        DataInputter dataInputter = new DataInputter();
+        //Вызов метода ввода с клавиатуры
+        dataInputter.inputter();
+        // прописываем логику сложения первого введенног числа + второго числа
+        int resultSum = dataInputter.valueClass.getFirstValue() + dataInputter.valueClass.getSecondValue();
+        //вывод результата суммы
+        System.out.println("Результат сложения: " + resultSum);
+        return sum();
     }
 }

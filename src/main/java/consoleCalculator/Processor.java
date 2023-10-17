@@ -15,10 +15,12 @@ public class Processor {
                 System.out.println("Add operation selected");
                 ModuleAdding moduleAdding = new ModuleAdding();
                 moduleAdding.sum();
+                break;
             } else if (numberOperation == 2) {
                 System.out.println("Subtraction operation selected");
                 ModuleSubtraction moduleSubtraction = new ModuleSubtraction();
                 moduleSubtraction.subtraction();
+                break;
             } else {
                 System.out.println("Invalid command");
             }

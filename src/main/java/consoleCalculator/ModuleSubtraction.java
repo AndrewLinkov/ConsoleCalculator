@@ -3,19 +3,22 @@
 package consoleCalculator;
 
 import java.util.Scanner;
+import java.util.SortedMap;
 
 public class ModuleSubtraction {
     public int subtraction() {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number one: ");
-        int firstValue = scanner.nextInt();
-        System.out.print("Enter number two: ");
-        int secondValue = scanner.nextInt();
-
-        ValueClass valueClass = new ValueClass(firstValue, secondValue);
-        int resultSubtraction = valueClass.getFirstValue() - valueClass.getSecondValue();
-        System.out.println("Result subtraction: " + resultSubtraction);
-        return resultSubtraction;
+        DataInputter dataInputter = new DataInputter();
+        //Вызов метода ввода с клавиатуры
+        dataInputter.inputter();
+        // прописываем логику вычитания первого введенног числа - второго числа,
+        // с проверкой что первое число больше второго
+        if (dataInputter.valueClass.getFirstValue() >= dataInputter.valueClass.getSecondValue()) {
+            int resultSubtraction = dataInputter.valueClass.getFirstValue() - dataInputter.valueClass.getSecondValue();
+            //вывод результата вычитания
+            System.out.println("Результат вычитания: " + resultSubtraction);
+        } else {
+            System.out.println("Операция вычитания невозможно, т.к первое число меньше второго");
+        }
+        return subtraction();
     }
 }
