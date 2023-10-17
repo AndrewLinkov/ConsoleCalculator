@@ -9,6 +9,7 @@ public class DataInputter {
 
     public ValueClass inputter() {
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("Enter number one: ");
         valueClass.setFirstValue(scanner.nextInt());
         System.out.print("Enter number two: ");
@@ -16,3 +17,4 @@ public class DataInputter {
         return valueClass;
     }
 }
+

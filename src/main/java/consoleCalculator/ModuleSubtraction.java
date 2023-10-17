@@ -15,7 +15,7 @@ public class ModuleSubtraction {
             System.out.println("Результат вычитания: " + resultSubtraction);
             return resultSubtraction;
         } else {
-            System.out.println("Операция вычитания невозможно, т.к первое число меньше второго " +
+            System.out.println("Операция вычитания невозможна, т.к первое число меньше второго " +
                     "\nВведите корректные значения");
         }
         return subtraction();
