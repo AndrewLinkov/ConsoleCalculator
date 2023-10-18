@@ -5,7 +5,7 @@ package consoleCalculator;
 public class ValueClass {
     private int firstValue;
     private int secondValue;
-    private int nomberOperation;
+    private int numberOperation;
 
     public int getFirstValue() {
         return firstValue;
@@ -24,10 +24,10 @@ public class ValueClass {
     }
 
     public int getNumberOperation() {
-        return nomberOperation;
+        return numberOperation;
     }
 
-    public void setNumberOperation(int nomberOperation) {
-        this.nomberOperation = nomberOperation;
+    public void setNumberOperation(int numberOperation) {
+        this.numberOperation = numberOperation;
     }
 }

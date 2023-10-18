@@ -6,6 +6,5 @@ public class Main {
         StartClass.start();
         Processor processor = new Processor();
         processor.result();
-
     }
 }

@@ -9,20 +9,18 @@ public class DataInput {
     Scanner scanner = new Scanner(System.in);
 
     //Метод ввода в модули сложения, вычитания, умножения и деления.
-    public ValueClass inputValue() {
+    public void inputValue() {
         System.out.print("Enter number one: ");
         valueClass.setFirstValue(scanner.nextInt());
         System.out.print("Enter number two: ");
         valueClass.setSecondValue(scanner.nextInt());
-        return valueClass;
     }
 
     //Метод ввода выбора операции вычисления
-    public int inputNumberOperation() {
+    public void inputNumberOperation() {
         System.out.println("-------------------------" +
                 "\nEnter calculation operation number: ");
         valueClass.setNumberOperation(scanner.nextInt());
-        return valueClass.getNumberOperation();
     }
 }
 
