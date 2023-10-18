@@ -4,13 +4,13 @@ package consoleCalculator;
 
 public class ModuleSubtraction {
     public int subtraction() {
-        DataInputter dataInputter = new DataInputter();
+        DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
-        dataInputter.inputter();
+        dataInput.inputterValue();
         // прописываем логику вычитания первого введенног числа - второго числа,
         // с проверкой что первое число больше второго
-        if (dataInputter.valueClass.getFirstValue() >= dataInputter.valueClass.getSecondValue()) {
-            int resultSubtraction = dataInputter.valueClass.getFirstValue() - dataInputter.valueClass.getSecondValue();
+        if (dataInput.valueClass.getFirstValue() >= dataInput.valueClass.getSecondValue()) {
+            int resultSubtraction = dataInput.valueClass.getFirstValue() - dataInput.valueClass.getSecondValue();
             //вывод результата вычитания
             System.out.println("Результат вычитания: " + resultSubtraction);
             return resultSubtraction;

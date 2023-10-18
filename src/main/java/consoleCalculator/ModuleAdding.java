@@ -5,12 +5,12 @@ package consoleCalculator;
 public class ModuleAdding {
     public void sum() {
 
-        DataInputter dataInputter = new DataInputter();
+        DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
-        dataInputter.inputter();
+        dataInput.inputterValue();
         // прописываем логику сложения первого введенног числа + второго числа
 
-        int resultSum = dataInputter.valueClass.getFirstValue() + dataInputter.valueClass.getSecondValue();
+        int resultSum = dataInput.valueClass.getFirstValue() + dataInput.valueClass.getSecondValue();
         //вывод результата суммы
         System.out.println("Результат сложения: " + resultSum);
     }
