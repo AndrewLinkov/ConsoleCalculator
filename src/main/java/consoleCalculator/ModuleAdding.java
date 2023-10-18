@@ -7,11 +7,12 @@ public class ModuleAdding {
 
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
-        dataInput.inputterValue();
+        dataInput.inputValue();
         // прописываем логику сложения первого введенног числа + второго числа
 
         int resultSum = dataInput.valueClass.getFirstValue() + dataInput.valueClass.getSecondValue();
         //вывод результата суммы
-        System.out.println("Результат сложения: " + resultSum);
+        System.out.println("------------------------- " +
+                "\nРезультат сложения: " + resultSum);
     }
 }
