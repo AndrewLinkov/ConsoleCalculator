@@ -3,17 +3,17 @@
 package consoleCalculator;
 
 public class Adding implements Operations{
-    public void sum() {
+    public void add() {
 
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
         dataInput.inputValue();
 
         //обращаемся к интерфейсу, где прописана логика
-        int resultSum = sumInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
+        int resultAdding = addingInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
 
         //вывод результата суммы
         System.out.println("------------------------- " +
-                "\nРезультат сложения: " + resultSum);
+                "\nРезультат сложения: " + resultAdding);
     }
 }
