@@ -2,7 +2,7 @@
 
 package consoleCalculator;
 
-public class ModuleSubtraction {
+public class Subtraction {
     public int subtraction() {
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры

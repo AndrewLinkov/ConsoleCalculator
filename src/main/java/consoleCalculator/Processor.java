@@ -11,13 +11,13 @@ public class Processor {
             switch (dataInput.valueClass.getNumberOperation()) {
                 case 1:
                     System.out.println("Add operation selected");
-                    ModuleAdding moduleAdding = new ModuleAdding();
-                    moduleAdding.sum();
+                    Adding adding = new Adding();
+                    adding.sum();
                     break;
                 case 2:
                     System.out.println("Subtraction operation selected");
-                    ModuleSubtraction moduleSubtraction = new ModuleSubtraction();
-                    moduleSubtraction.subtraction();
+                    Subtraction subtraction = new Subtraction();
+                    subtraction.subtraction();
                     break;
                 default:
                     System.out.println("Invalid command");

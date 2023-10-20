@@ -2,15 +2,16 @@
 
 package consoleCalculator;
 
-public class ModuleAdding {
+public class Adding implements Operations{
     public void sum() {
 
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
         dataInput.inputValue();
-        // прописываем логику сложения первого введенног числа + второго числа
 
-        int resultSum = dataInput.valueClass.getFirstValue() + dataInput.valueClass.getSecondValue();
+        //обращаемся к интерфейсу, где прописана логика
+        int resultSum = sumInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
+
         //вывод результата суммы
         System.out.println("------------------------- " +
                 "\nРезультат сложения: " + resultSum);
