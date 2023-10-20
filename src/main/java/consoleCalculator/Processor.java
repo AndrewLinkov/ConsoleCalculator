@@ -5,14 +5,14 @@ package consoleCalculator;
 public class Processor {
     public void result() {
         DataInput dataInput = new DataInput();
-
-        for (; ; ) {
+        StartClass.start();
+        do {
             dataInput.inputNumberOperation();
             switch (dataInput.valueClass.getNumberOperation()) {
                 case 1 -> {
-                    System.out.println("Add operation selected");
-                    Adding adding = new Adding();
-                    adding.add();
+                    System.out.println("Addition operation selected");
+                    Addition addition = new Addition();
+                    addition.add();
                 }
                 case 2 -> {
                     System.out.println("Subtraction operation selected");
@@ -20,7 +20,7 @@ public class Processor {
                     subtraction.subtraction();
                 }
                 case 3 -> {
-                    System.out.println("Multiply operation selected");
+                    System.out.println("Multiplication operation selected");
                     Multiplication multiplication = new Multiplication();
                     multiplication.multiply();
                 }
@@ -29,12 +29,14 @@ public class Processor {
                     Division division = new Division();
                     division.divide();
                 }
-                case 5 -> System.out.println("Exit");
+                case 0 -> {
+                    System.out.println("Exit");
+                    ExitClass exitClass = new ExitClass();
+                    exitClass.exit();
+                }
                 default -> System.out.println("Invalid command");
             }
-        }
+        } while (dataInput.valueClass.getNumberOperation() != 0);
     }
 }
-
-
 

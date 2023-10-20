@@ -2,7 +2,7 @@
 
 package consoleCalculator;
 
-public class Subtraction implements Operations{
+public class Subtraction implements Operations {
     public int subtraction() {
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
@@ -13,11 +13,11 @@ public class Subtraction implements Operations{
             //обращаемся к интерфейсу, где прописана логика
             int resultSubtraction = subtractionInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
             System.out.println("-------------------------" +
-                    "\nРезультат вычитания: " + resultSubtraction);
+                    "\nSubtraction result: " + resultSubtraction);
             return resultSubtraction;
         } else {
-            System.out.println("Операция вычитания невозможна, т.к первое число меньше второго " +
-                    "\nВведите корректные значения");
+            System.out.println("The subtraction operation is not possible because the first number is less than the second " +
+                    "\nEnter valid values");
         }
         return subtraction();
     }

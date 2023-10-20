@@ -1,7 +1,7 @@
 package consoleCalculator;
 
 public interface Operations {
-    default int addingInterface(int a, int b) {
+    default int additionInterface(int a, int b) {
         return a + b;
     }
 

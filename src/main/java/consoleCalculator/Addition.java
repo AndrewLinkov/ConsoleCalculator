@@ -2,7 +2,7 @@
 
 package consoleCalculator;
 
-public class Adding implements Operations{
+public class Addition implements Operations{
     public void add() {
 
         DataInput dataInput = new DataInput();
@@ -10,10 +10,10 @@ public class Adding implements Operations{
         dataInput.inputValue();
 
         //обращаемся к интерфейсу, где прописана логика
-        int resultAdding = addingInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
+        int resultAdding = additionInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
 
         //вывод результата суммы
         System.out.println("------------------------- " +
-                "\nРезультат сложения: " + resultAdding);
+                "\nAddition result: " + resultAdding);
     }
 }

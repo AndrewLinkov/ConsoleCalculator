@@ -7,6 +7,6 @@ public class Division implements Operations {
         dataInput.inputValue();
         int resultDivide = divisionInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
         System.out.println("------------------------- " +
-                "\nРезультат умножения: " + resultDivide);
+                "\nResult of division: " + resultDivide);
     }
 }

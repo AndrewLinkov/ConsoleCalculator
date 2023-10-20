@@ -7,6 +7,6 @@ public class Multiplication implements Operations {
         dataInput.inputValue();
         int resultMultiply = multiplicationInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
         System.out.println("------------------------- " +
-                "\nРезультат умножения: " + resultMultiply);
+                "\nResult of multiplication: " + resultMultiply);
     }
 }
