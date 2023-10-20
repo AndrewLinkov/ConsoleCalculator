@@ -9,19 +9,17 @@ public class Processor {
         for (; ; ) {
             dataInput.inputNumberOperation();
             switch (dataInput.valueClass.getNumberOperation()) {
-                case 1:
+                case 1 -> {
                     System.out.println("Add operation selected");
                     Adding adding = new Adding();
                     adding.sum();
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("Subtraction operation selected");
                     Subtraction subtraction = new Subtraction();
                     subtraction.subtraction();
-                    break;
-                default:
-                    System.out.println("Invalid command");
-
+                }
+                default -> System.out.println("Invalid command");
             }
         }
     }

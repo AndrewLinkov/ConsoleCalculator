@@ -2,7 +2,7 @@
 
 package consoleCalculator;
 
-public class Subtraction {
+public class Subtraction implements Operations{
     public int subtraction() {
         DataInput dataInput = new DataInput();
         //Вызов метода ввода с клавиатуры
@@ -10,8 +10,8 @@ public class Subtraction {
         // прописываем логику вычитания первого введенног числа - второго числа,
         // с проверкой что первое число больше второго
         if (dataInput.valueClass.getFirstValue() >= dataInput.valueClass.getSecondValue()) {
-            int resultSubtraction = dataInput.valueClass.getFirstValue() - dataInput.valueClass.getSecondValue();
-            //вывод результата вычитания
+            //обращаемся к интерфейсу, где прописана логика
+            int resultSubtraction = subtractionInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
             System.out.println("-------------------------" +
                     "\nРезультат вычитания: " + resultSubtraction);
             return resultSubtraction;

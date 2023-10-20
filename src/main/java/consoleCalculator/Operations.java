@@ -5,7 +5,7 @@ public interface Operations {
         return a + b;
     }
 
-//    default int subtractionInterface(int a, int b) {
-//        return a - b;
-//    }
+    default int subtractionInterface(int a, int b) {
+        return a - b;
+    }
 }
