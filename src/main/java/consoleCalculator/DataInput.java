@@ -11,9 +11,9 @@ public class DataInput {
     //Метод ввода в модули сложения, вычитания, умножения и деления.
     public void inputValue() {
         System.out.print("Enter number one: ");
-        valueClass.setFirstValue(scanner.nextInt());
+        valueClass.setFirstValue(scanner.nextDouble());
         System.out.print("Enter number two: ");
-        valueClass.setSecondValue(scanner.nextInt());
+        valueClass.setSecondValue(scanner.nextDouble());
     }
 
     //Метод ввода выбора операции вычисления

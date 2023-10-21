@@ -1,3 +1,5 @@
+//Класс сложения
+
 package consoleCalculator;
 
 public class Multiplication implements Operations {
@@ -5,7 +7,7 @@ public class Multiplication implements Operations {
 
         DataInput dataInput = new DataInput();
         dataInput.inputValue();
-        int resultMultiply = multiplicationInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
+        double resultMultiply = multiplicationInterface(dataInput.valueClass.getFirstValue(), dataInput.valueClass.getSecondValue());
         System.out.println("------------------------- " +
                 "\nResult of multiplication: " + resultMultiply);
     }

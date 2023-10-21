@@ -1,19 +1,19 @@
 package consoleCalculator;
 
 public interface Operations {
-    default int additionInterface(int a, int b) {
+    default double additionInterface(double a, double b) {
         return a + b;
     }
 
-    default int subtractionInterface(int a, int b) {
+    default double subtractionInterface(double a, double b) {
         return a - b;
     }
 
-    default int multiplicationInterface(int a, int b) {
+    default double multiplicationInterface(double a, double b) {
         return a * b;
     }
 
-    default int divisionInterface(int a, int b) {
+    default double divisionInterface(double a, double b) {
         return a / b;
     }
 }

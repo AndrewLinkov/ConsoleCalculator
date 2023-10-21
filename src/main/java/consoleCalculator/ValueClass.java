@@ -3,23 +3,23 @@
 package consoleCalculator;
 
 public class ValueClass {
-    private int firstValue;
-    private int secondValue;
+    private double firstValue;
+    private double secondValue;
     private int numberOperation;
 
-    public int getFirstValue() {
+    public double getFirstValue() {
         return firstValue;
     }
 
-    public void setFirstValue(int firstValue) {
+    public void setFirstValue(double firstValue) {
         this.firstValue = firstValue;
     }
 
-    public int getSecondValue() {
+    public double getSecondValue() {
         return secondValue;
     }
 
-    public void setSecondValue(int secondValue) {
+    public void setSecondValue(double secondValue) {
         this.secondValue = secondValue;
     }
 
